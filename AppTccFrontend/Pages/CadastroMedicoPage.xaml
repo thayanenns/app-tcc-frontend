@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTccFrontend.Pages.CadastroMedicoPage"
+             Title="Cadastro de Médico">
+
+    <ScrollView>
+        <StackLayout Margin="20">
+            <Label Text="Cadastro de Médico"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Entry Placeholder="ID"
+                   x:Name="entId"
+                   Keyboard="Numeric"
+                   Margin="0,10,0,0" />
+
+            <Entry Placeholder="Nome Completo"
+                   x:Name="entNome"
+                   Margin="0,10,0,0" />
+
+            <DatePicker 
+                        x:Name="entDtNascimento"
+                        Margin="0,10,0,0" />
+
+            <Entry Placeholder="CRM"
+                   x:Name="entCrm"
+                   Margin="0,10,0,0" />
+
+            <Label Text="Selecione o Gênero"
+                   FontSize="18"
+                   Margin="0,10,0,0" />
+            <Picker x:Name="pickerGenero">
+                <Picker.Items>
+                    <x:String>Feminino</x:String>
+                    <x:String>Masculino</x:String>
+                    <x:String>Outro</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Entry Placeholder="Telefone"
+                   x:Name="entTelefone"
+                   Keyboard="Telephone"
+                   Margin="0,10,0,0" />
+
+            <Entry Placeholder="Email"
+                   x:Name="entEmail"
+                   Keyboard="Email"
+                   Margin="0,10,0,0" />
+
+            <Entry Placeholder="Senha"
+                   x:Name="entSenha"
+                   IsPassword="True"
+                   Margin="0,10,0,0" />
+
+            <Button Text="Salvar Médico"
+                    x:Name="SubmitBtn"
+                    BackgroundColor="#3498db"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="5"
+                    Clicked="SubmitClicked"
+                    Margin="0,20,0,0"
+                    HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTccFrontend.Pages.LoginPage"
+             Title="LoginPage"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout VerticalOptions="CenterAndExpand" Margin="16" Padding="16">
+        <Label 
+            Text="Login"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="E-mail" />
+            <Entry Placeholder="Digite seu e-mail" x:Name="entEmail"/>
+        <Label 
+            Text="Senha" />
+            <Entry Placeholder="Digite sua senha" x:Name="entSenha" IsPassword="True"/>
+
+        <Button Text="Entrar" x:Name="btnEntrar" Clicked="btnEntrar_Clicked" Margin="10"/>
+        <Button x:Name="btnRegistrar"
+                Clicked ="btnRegistrar_Clicked" Text="Registre-se" Margin="10"/>
+
+    </StackLayout>
+</ContentPage>

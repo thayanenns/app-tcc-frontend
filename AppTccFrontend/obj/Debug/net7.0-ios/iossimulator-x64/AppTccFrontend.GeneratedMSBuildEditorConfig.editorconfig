@@ -1,0 +1,65 @@
+is_global = true
+build_property.TargetFramework = net7.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AppTccFrontend
+build_property.ProjectDir = C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\
+
+[C:/Users/THAYANE/source/repos/AppTccFrontend/AppTccFrontend/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppTccFrontend.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/THAYANE/source/repos/AppTccFrontend/AppTccFrontend/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppTccFrontend.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/THAYANE/source/repos/AppTccFrontend/AppTccFrontend/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppTccFrontend.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/THAYANE/source/repos/AppTccFrontend/AppTccFrontend/Pages/CadastroMedicoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppTccFrontend.Pages.CadastroMedicoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\CadastroMedicoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\CadastroMedicoPage.xaml
+
+[C:/Users/THAYANE/source/repos/AppTccFrontend/AppTccFrontend/Pages/CadastroPacientePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppTccFrontend.Pages.CadastroPacientePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\CadastroPacientePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\CadastroPacientePage.xaml
+
+[C:/Users/THAYANE/source/repos/AppTccFrontend/AppTccFrontend/Pages/CadastroUsuarioPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppTccFrontend.Pages.CadastroUsuarioPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\CadastroUsuarioPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\CadastroUsuarioPage.xaml
+
+[C:/Users/THAYANE/source/repos/AppTccFrontend/AppTccFrontend/Pages/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppTccFrontend.Pages.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\LoginPage.xaml
+
+[C:/Users/THAYANE/source/repos/AppTccFrontend/AppTccFrontend/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppTccFrontend.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/THAYANE/source/repos/AppTccFrontend/AppTccFrontend/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppTccFrontend.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
