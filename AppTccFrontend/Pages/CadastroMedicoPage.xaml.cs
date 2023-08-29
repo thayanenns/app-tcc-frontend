@@ -20,7 +20,7 @@ public partial class CadastroMedicoPage : ContentPage
 
 
 
-    private readonly string urlBase = "https://localhost:7125/api/paciente";
+    private readonly string urlBase = "https://localhost:7125/api/medico";
     private async void SubmitClicked(object sender, EventArgs e)
     {
         try
