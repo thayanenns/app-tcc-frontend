@@ -1,41 +1,52 @@
+using AppTccFrontend.Enums;
+using AppTccFrontend.Models;
+using Newtonsoft.Json;
 using System.Net.Http.Json;
+using System.Text;
 
 namespace AppTccFrontend.Pages;
 
 public partial class CadastroPacientePage : ContentPage
 {
-	public CadastroPacientePage()
-	{
-		InitializeComponent();
-	}
+    public CadastroPacientePage(TipoUsuario tipoUsuario)
+    {
+        InitializeComponent();
+        _tipoUsuario = tipoUsuario;
+    }
+    HttpClient client = new HttpClient();
 
-    private readonly string urlBase = "https://localhost:7125/api/Paciente";
+    private TipoUsuario _tipoUsuario;
 
+
+
+    private readonly string urlBase = "https://localhost:7125/api/paciente";
     private async void SubmitClicked(object sender, EventArgs e)
     {
         try
         {
             var httpClient = new HttpClient();
 
-            var data = new
+            var novoUsuario = new 
             {
 
-                nome = entNome.Text,
-                dataNascimento = entDtNascimento.Date.ToString("yyyy-MM-dd"),
-                sexo = pickerGenero.SelectedItem.ToString(),
-                telefone = entTelefone.Text,
-                email = entEmail.Text,
-                senha = entSenha.Text,
-                medicoId = entMedicoId.Text
+                Nome = entNome.Text,
+                DataNascimento = entDtNascimento.Date.ToUniversalTime(),
+                //Tipo = (TipoUsuario)pickerTipo.SelectedItem,
+                Tipo = _tipoUsuario,
+                Sexo = entSexo.Text,
+                Telefone = entTelefone.Text,
+                Email = entEmail.Text,
+                Senha = entSenha.Text,
+                MedicoId = entMedicoId.Text
+
                 // acctualFileUrl = imageUpload.Source.ToString()
 
             };
-            // Console.Write(data);
-            var response = await httpClient.PostAsJsonAsync(urlBase, data);
+            var response = await httpClient.PostAsJsonAsync(urlBase, novoUsuario);
 
             response.EnsureSuccessStatusCode();
 
-            await DisplayAlert("Sucesso", "Post enviado com sucesso!", "OK");
+            await DisplayAlert("Sucesso", "Cadastro realizado!", "OK");
             entNome.Text = "";
             await Navigation.PushAsync(new LoginPage());
         }
@@ -46,3 +57,42 @@ public partial class CadastroPacientePage : ContentPage
 
     }
 }
+
+/*
+    private async void SubmitClicked(object sender, EventArgs e)
+    {
+        try
+        {
+            var novoUsuario = new
+            {
+
+                Nome = entNome.Text,
+                DataNascimento = entDtNascimento.Date,
+                Tipo = (TipoUsuario)pickerTipo.SelectedItem,
+                Sexo = entSexo.Text,
+                Telefone = entTelefone.Text,
+                Email = entEmail.Text,
+                Senha = entSenha.Text,
+                // acctualFileUrl = imageUpload.Source.ToString()
+
+            };
+
+            var data = JsonConvert.SerializeObject(novoUsuario);
+            var content = new StringContent(data, Encoding.UTF8, "application/json");
+
+            HttpResponseMessage response = null;
+
+            response = await client.PostAsync(urlBase, content);
+            if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception("Erro ao incluir produto");
+        }
+    }
+            catch(Exception ex)
+            {
+            await DisplayAlert("Erro", ex.Message, "OK");
+        }
+
+    }
+}
+*/

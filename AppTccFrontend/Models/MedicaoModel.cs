@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppTccFrontend.Models
 {
-    internal class MedicaoModel
+    public class MedicaoModel
     {
         public int Id { get; set; }
         public DateTime DataMedicao { get; set; }

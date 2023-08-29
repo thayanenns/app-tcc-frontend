@@ -14,7 +14,7 @@ public partial class LoginPage : ContentPage
 
     private void btnRegistrar_Clicked(object sender, EventArgs e)
     {
-		Navigation.PushAsync(new CadastroUsuarioPage());
+		Navigation.PushAsync(new EscolhaPerfilPage());
     }
 
     private async void btnEntrar_Clicked(object sender, EventArgs e)
@@ -37,7 +37,7 @@ public partial class LoginPage : ContentPage
                     // Aqui você pode analisar o responseBody, se necessário
 
                     await DisplayAlert("Sucesso", "Login bem-sucedido!", "OK");
-                    Navigation.PushAsync(new MainPage());
+                    Navigation.PushAsync(new HomeMedicoPage());
 
 
                 }

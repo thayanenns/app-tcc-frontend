@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-08-23T23:27:03.043</Modified>
+      <Modified>2023-08-29T02:24:19.007</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-08-23T23:21:56.928</Modified>
+      <Modified>2023-08-29T02:24:17.565</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppTccFrontend.runtimeconfig.json">
       <PackagePath>AppTccFrontend.runtimeconfig.json</PackagePath>
-      <Modified>2023-08-21T02:54:11.156</Modified>
+      <Modified>2023-08-27T05:14:27.505</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppTccFrontend.dll">
       <PackagePath>AppTccFrontend.dll</PackagePath>
-      <Modified>2023-08-23T23:27:01.119</Modified>
+      <Modified>2023-08-29T02:24:15.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>AppTccFrontend.exe</PackagePath>
-      <Modified>2023-08-23T23:27:01.134</Modified>
+      <Modified>2023-08-29T02:24:15.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\THAYANE\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.7\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -924,7 +924,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\AppTccFrontend.deps.json">
       <PackagePath>AppTccFrontend.deps.json</PackagePath>
-      <Modified>2023-08-23T23:27:02.827</Modified>
+      <Modified>2023-08-29T02:24:18.687</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -941,6 +941,238 @@
     <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
       <Modified>2023-08-21T01:11:28.075</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+      <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.262</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+      <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.286</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+      <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.320</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+      <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.367</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+      <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.550</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+      <PackagePath>OpenSans-Regular.ttf</PackagePath>
+      <Modified>2023-08-21T01:11:28.070</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+      <PackagePath>OpenSans-Semibold.ttf</PackagePath>
+      <Modified>2023-08-21T01:11:28.072</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+      <PackagePath>appicon.ico</PackagePath>
+      <Modified>2023-08-27T05:01:27.710</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+      <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.982</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+      <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
+      <Modified>2023-08-27T05:01:29.010</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+      <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
+      <Modified>2023-08-27T05:01:29.033</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+      <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
+      <Modified>2023-08-27T05:01:29.066</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+      <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
+      <Modified>2023-08-27T05:01:29.162</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.961</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.975</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.103</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.027</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.050</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.865</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.890</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.953</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.899</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+      <PackagePath>appiconLogo.scale-100.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.729</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+      <PackagePath>appiconLogo.scale-125.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.736</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+      <PackagePath>appiconLogo.scale-150.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.760</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+      <PackagePath>appiconLogo.scale-200.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.767</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+      <PackagePath>appiconLogo.scale-400.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.780</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+      <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.786</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+      <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.793</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+      <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.830</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+      <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.799</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+      <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.807</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+      <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.364</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+      <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.403</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+      <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.419</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+      <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.455</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+      <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.572</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+      <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.158</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+      <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.165</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+      <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.195</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+      <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.244</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+      <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.327</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+      <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.111</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+      <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.117</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+      <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.124</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+      <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.135</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+      <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.149</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+      <PackagePath>appiconWideTile.scale-100.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.652</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+      <PackagePath>appiconWideTile.scale-125.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.698</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+      <PackagePath>appiconWideTile.scale-150.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.755</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+      <PackagePath>appiconWideTile.scale-200.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.843</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+      <PackagePath>appiconWideTile.scale-400.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.961</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.804</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.836</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
+      <Modified>2023-08-27T05:01:27.941</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+      <Modified>2023-08-27T05:01:28.092</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTccFrontend.Pages.EscolhaPerfilPage"
+             Title="Escolha de Perfil">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
+            <Image Source="profile_icon.png" HeightRequest="100" WidthRequest="100" />
+
+            <Label Text="Escolha seu perfil" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+
+            <Button Text="Sou paciente" Clicked="OnPacienteClicked" />
+            <Button Text="Sou médico" Clicked="OnMedicoClicked" />
+
+            <!--<Button Text="Continuar" Clicked="OnContinuarClicked" WidthRequest="150"
+                    BackgroundColor="#3498db" TextColor="White" FontAttributes="Bold" CornerRadius="5" />-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
