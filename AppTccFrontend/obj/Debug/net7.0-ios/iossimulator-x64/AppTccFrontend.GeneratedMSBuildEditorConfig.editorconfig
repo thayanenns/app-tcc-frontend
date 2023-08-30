@@ -58,6 +58,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = AppTccFrontend.Pages.HomeM
 build_metadata.AdditionalFiles.TargetPath = Pages\HomeMedicoPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\HomeMedicoPage.xaml
 
+[C:/Users/THAYANE/source/repos/AppTccFrontend/AppTccFrontend/Pages/HomePacientePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppTccFrontend.Pages.HomePacientePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\HomePacientePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\HomePacientePage.xaml
+
 [C:/Users/THAYANE/source/repos/AppTccFrontend/AppTccFrontend/Pages/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppTccFrontend.Pages.LoginPage.xaml

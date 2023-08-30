@@ -1,44 +1,53 @@
 using AppTccFrontend.Models;
-using Microsoft.Maui.Graphics;
 using Newtonsoft.Json;
+using System;
+using System.Collections.ObjectModel;
 
-namespace AppTccFrontend.Pages;
-
-public partial class HomeMedicoPage : ContentPage
+namespace AppTccFrontend.Pages
 {
-    private ICollection<PacienteModel> _pacientes;
-    private HttpClient _httpClient = new HttpClient();
-    public HomeMedicoPage()
-	{
-		InitializeComponent();
-	}
-    protected override async void OnAppearing()
+    public partial class HomeMedicoPage : ContentPage
     {
-        base.OnAppearing();
-        try
+        private ICollection<PacienteModel> _pacientes;
+        private HttpClient _httpClient = new HttpClient();
+        private readonly UsuarioModel _medico;
+
+        public HomeMedicoPage(UsuarioModel medico)
         {
-            _pacientes = await ObterPacientesAsync();
-            PacientesListView.ItemsSource = _pacientes;
+            InitializeComponent();
+            _medico = medico;
         }
-        catch (Exception ex)
+
+        protected override async void OnAppearing()
         {
-            await DisplayAlert("Erro", "Ocorreu um erro ao buscar os pacientes: " + ex.Message, "OK");
+            base.OnAppearing();
+            try
+            {
+                var medicoId = _medico.Id; // Use o Id do médico autenticado
+                _pacientes = await ObterPacientesAsync(medicoId);
+                PacientesListView.ItemsSource = _pacientes;
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Erro", "Ocorreu um erro ao buscar os pacientes: " + ex.Message, "OK");
+            }
         }
-    }
 
-    private async Task<ICollection<PacienteModel>> ObterPacientesAsync()
-    {
-        HttpResponseMessage response = await _httpClient.GetAsync("https://localhost:7125/api/paciente");
-        response.EnsureSuccessStatusCode();
 
-        string json = await response.Content.ReadAsStringAsync();
-        ICollection<PacienteModel> pacientes = JsonConvert.DeserializeObject<ICollection<PacienteModel>>(json);
 
-        return pacientes;
-    }
+        private async Task<ICollection<PacienteModel>> ObterPacientesAsync(Guid medicoId)
+        {
+            HttpResponseMessage response = await _httpClient.GetAsync($"https://localhost:7125/api/paciente?medicoId={medicoId}");
+            response.EnsureSuccessStatusCode();
 
-    private void OnButtonClicked(object sender, EventArgs e)
-    {
-        Navigation.PushAsync(new DetalhesPaciente());
+            string json = await response.Content.ReadAsStringAsync();
+            ICollection<PacienteModel> pacientes = JsonConvert.DeserializeObject<ICollection<PacienteModel>>(json);
+
+            return pacientes;
+        }
+
+        private void OnButtonClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new DetalhesPaciente());
+        }
     }
 }

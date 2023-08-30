@@ -57,6 +57,9 @@
 	  <Compile Update="Pages\CadastroPacientePage.xaml.cs">
 	    <DependentUpon>CadastroPacientePage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Pages\HomeMedicoPage.xaml.cs">
+	    <DependentUpon>HomeMedicoPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -75,9 +78,16 @@
 	  <MauiXaml Update="Pages\HomeMedicoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\HomePacientePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Models\NovaPasta\" />
 	</ItemGroup>
 
 </Project>

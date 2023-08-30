@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-08-29T02:51:35.472</Modified>
+      <Modified>2023-08-30T23:25:11.379</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-08-29T02:43:33.079</Modified>
+      <Modified>2023-08-30T23:24:08.201</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppTccFrontend.runtimeconfig.json">
       <PackagePath>AppTccFrontend.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppTccFrontend.dll">
       <PackagePath>AppTccFrontend.dll</PackagePath>
-      <Modified>2023-08-29T02:51:33.542</Modified>
+      <Modified>2023-08-30T23:25:09.470</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>AppTccFrontend.exe</PackagePath>
-      <Modified>2023-08-29T02:51:33.555</Modified>
+      <Modified>2023-08-30T23:25:09.484</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\THAYANE\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.7\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -924,7 +924,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\AppTccFrontend.deps.json">
       <PackagePath>AppTccFrontend.deps.json</PackagePath>
-      <Modified>2023-08-29T02:51:35.275</Modified>
+      <Modified>2023-08-30T23:25:11.183</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

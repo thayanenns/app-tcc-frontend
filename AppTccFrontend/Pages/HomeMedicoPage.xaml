@@ -7,7 +7,12 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
+            
         </Grid.RowDefinitions>
+        <Label Text="Bem-vindo, Dr. Nome do Médico!"
+                   FontSize="Large"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand" />
         <ListView x:Name="PacientesListView"
               Grid.Row="1"
               Margin="10">
