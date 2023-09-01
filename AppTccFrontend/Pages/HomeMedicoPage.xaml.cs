@@ -10,12 +10,23 @@ namespace AppTccFrontend.Pages
         private ICollection<PacienteModel> _pacientes;
         private HttpClient _httpClient = new HttpClient();
         private readonly UsuarioModel _medico;
+        public UsuarioModel Paciente { get; private set; }
+
 
         public HomeMedicoPage(UsuarioModel medico)
         {
             InitializeComponent();
             _medico = medico;
         }
+
+        public HomeMedicoPage(UsuarioModel medico, UsuarioModel paciente)
+        {
+            InitializeComponent();
+            _medico = medico;
+            Paciente = paciente;
+
+        }
+
 
         protected override async void OnAppearing()
         {
@@ -47,7 +58,14 @@ namespace AppTccFrontend.Pages
 
         private void OnButtonClicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new DetalhesPaciente());
+            if (sender is Button button && button.CommandParameter is DateTime selectedDate)
+            {
+                // Crie a página HomeMedicoPage e passe o médico e o paciente como parâmetros
+                Navigation.PushAsync(new HomeMedicoPage(_medico, Paciente));
+            }
         }
+
+
+
     }
 }

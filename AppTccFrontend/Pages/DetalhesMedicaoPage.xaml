@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTccFrontend.Pages.DetalhesMedicaoPage"
+             Title="DetalhesMedicaoPage">
+
+    <StackLayout>
+        <Label Text="{Binding DataDia, StringFormat='Data: {0:dd/MM/yyyy}'}"
+               FontSize="20"
+               HorizontalOptions="CenterAndExpand"
+               Margin="0,10" />
+
+        <!-- Adicione o ListView MedicoesListView aqui -->
+        <ListView x:Name="MedicoesListView"
+                  ItemsSource="{Binding Medicoes}"
+                  Margin="10">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame BackgroundColor="White"
+                               BorderColor="Gray"
+                               CornerRadius="10"
+                               Padding="10"
+                               Margin="0,5">
+                            <StackLayout>
+                                <Label Text="{Binding Glicemia, StringFormat='Glicemia: {0}'}"
+                                       FontSize="18" />
+                                <Label Text="{Binding PressaoSistolica, StringFormat='Pressão Sistólica: {0}'}"
+                                       FontSize="18" />
+                                <Label Text="{Binding PressaoDiastolica, StringFormat='Pressão Diastólica: {0}'}"
+                                       FontSize="18" />
+                                <Label Text="{Binding EmJejum, StringFormat='Em Jejum: {0}'}"
+                                       FontSize="18" />
+                            </StackLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

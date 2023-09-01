@@ -44,11 +44,11 @@ build_metadata.AdditionalFiles.ManifestResourceName = AppTccFrontend.Pages.Cadas
 build_metadata.AdditionalFiles.TargetPath = Pages\CadastroPacientePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\CadastroPacientePage.xaml
 
-[C:/Users/THAYANE/source/repos/AppTccFrontend/AppTccFrontend/Pages/DetalhesPaciente.xaml]
+[C:/Users/THAYANE/source/repos/AppTccFrontend/AppTccFrontend/Pages/DetalhesMedicaoPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = AppTccFrontend.Pages.DetalhesPaciente.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\DetalhesPaciente.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\DetalhesPaciente.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppTccFrontend.Pages.DetalhesMedicaoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\DetalhesMedicaoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\DetalhesMedicaoPage.xaml
 
 [C:/Users/THAYANE/source/repos/AppTccFrontend/AppTccFrontend/Pages/EscolhaPerfilPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

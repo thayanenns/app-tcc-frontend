@@ -69,7 +69,7 @@
 	  <MauiXaml Update="Pages\CadastroPacientePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\DetalhesPaciente.xaml">
+	  <MauiXaml Update="Pages\DetalhesMedicaoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\EscolhaPerfilPage.xaml">
@@ -84,10 +84,6 @@
 	  <MauiXaml Update="Pages\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Models\NovaPasta\" />
 	</ItemGroup>
 
 </Project>

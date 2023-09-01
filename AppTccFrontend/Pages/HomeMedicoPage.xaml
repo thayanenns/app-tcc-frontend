@@ -9,7 +9,7 @@
             <RowDefinition Height="*" />
             
         </Grid.RowDefinitions>
-        <Label Text="Bem-vindo, Dr. Nome do Médico!"
+        <Label Text="Bem-vindo, Dr.(a)"
                    FontSize="Large"
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="CenterAndExpand" />
