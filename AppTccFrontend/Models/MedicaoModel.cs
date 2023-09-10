@@ -13,8 +13,8 @@ namespace AppTccFrontend.Models
         public int Glicemia { get; set; }
         public int PressaoSistolica { get; set; }
         public int PressaoDiastolica { get; set; }
-        public Boolean EmJejum { get; set; }
-        public PacienteModel Paciente { get; set; }
+        public bool EmJejum { get; set; }
+        public PacienteModel? Paciente { get; set; }
         public Guid PacienteId { get; set; }
     }
 }

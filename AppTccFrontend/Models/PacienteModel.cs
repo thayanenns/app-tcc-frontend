@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static Microsoft.Maui.ApplicationModel.Permissions;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace AppTccFrontend.Models
 {
@@ -16,5 +11,7 @@ namespace AppTccFrontend.Models
         public Guid? MedicoId { get; set; }
 
         public ICollection<MedicaoModel>? Medicoes { get; set; }
+
+        public PacienteModel() { }
     }
 }

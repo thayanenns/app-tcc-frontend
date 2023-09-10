@@ -18,8 +18,6 @@ public partial class CadastroMedicoPage : ContentPage
     HttpClient client = new HttpClient();
     private TipoUsuario _tipoUsuario;
 
-
-
     private readonly string urlBase = "https://localhost:7125/api/medico";
     private async void SubmitClicked(object sender, EventArgs e)
     {

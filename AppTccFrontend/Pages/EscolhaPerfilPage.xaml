@@ -7,13 +7,11 @@
         <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
             <Image Source="profile_icon.png" HeightRequest="100" WidthRequest="100" />
 
-            <Label Text="Escolha seu perfil" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+            <Label Text="Escolha seu perfil" FontSize="30" FontAttributes="Bold" TextColor="#333333" HorizontalOptions="Center" />
 
-            <Button Text="Sou paciente" Clicked="OnPacienteClicked" />
-            <Button Text="Sou médico" Clicked="OnMedicoClicked" />
+            <Button Text="Sou paciente" Clicked="OnPacienteClicked" BackgroundColor="#3498db" TextColor="#FFFFFF"  FontSize="18" WidthRequest="200" HeightRequest="50" />
+            <Button Text="Sou médico" Clicked="OnMedicoClicked" BackgroundColor="#3498db" TextColor="#FFFFFF"  FontSize="18" WidthRequest="200" HeightRequest="50" />
 
-            <!--<Button Text="Continuar" Clicked="OnContinuarClicked" WidthRequest="150"
-                    BackgroundColor="#3498db" TextColor="White" FontAttributes="Bold" CornerRadius="5" />-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

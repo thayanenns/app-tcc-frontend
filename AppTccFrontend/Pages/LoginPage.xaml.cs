@@ -112,29 +112,32 @@ public partial class LoginPage : ContentPage
         return null;
     }
 
-
-
-    /*
-    private async Task<Guid?> ObterMedicoIdAsync(Guid usuarioId)
-    {
-        HttpResponseMessage response = await _httpClient.GetAsync($"https://localhost:7125/api/Usuario/{usuarioId}");
-        response.EnsureSuccessStatusCode();
-
-        string json = await response.Content.ReadAsStringAsync();
-        var usuario = JsonConvert.DeserializeObject<UsuarioModel>(json);
-
-        // Verifique se o usuário é do tipo médico e retorne o ID do médico associado
-        if (usuario.Tipo == TipoUsuario.Medico)
-        {
-            return (usuario as MedicoModel)?.MedicoId;
-        }
-
-        return null;
-    }
-    */
-
-
 }
+
+
+
+
+        /*
+        private async Task<Guid?> ObterMedicoIdAsync(Guid usuarioId)
+        {
+            HttpResponseMessage response = await _httpClient.GetAsync($"https://localhost:7125/api/Usuario/{usuarioId}");
+            response.EnsureSuccessStatusCode();
+
+            string json = await response.Content.ReadAsStringAsync();
+            var usuario = JsonConvert.DeserializeObject<UsuarioModel>(json);
+
+            // Verifique se o usuário é do tipo médico e retorne o ID do médico associado
+            if (usuario.Tipo == TipoUsuario.Medico)
+            {
+                return (usuario as MedicoModel)?.MedicoId;
+            }
+
+            return null;
+        }
+        */
+
+
+
 
 /*private async void btnEntrar_Clicked(object sender, EventArgs e)
 {

@@ -29,7 +29,7 @@ namespace AppTccFrontend.Pages
 
             try
             {
-                var pacienteId = _paciente.Id; // Substitua pelo ID do paciente logado
+                var pacienteId = _paciente.Id;
                 _medicoesPorDia = await ObterMedicoesPorDiaAsync(pacienteId);
                 DiasListView.ItemsSource = _medicoesPorDia;
             }
@@ -54,9 +54,40 @@ namespace AppTccFrontend.Pages
         {
             if (sender is Button button && button.CommandParameter is MedicaoPorDiaDto selectedDate)
             {
-                // Crie a página de detalhes das medições (ajuste o nome da página conforme necessário)
-                // Use a navegação para direcionar para a página de detalhes
+      
                 await Navigation.PushAsync(new DetalhesMedicaoPage(selectedDate));
+            }
+        }
+
+        private async void OnInserirMedicaoClicked(object sender, EventArgs e)
+        {
+            PacienteModel paciente = new PacienteModel
+            {
+                Id = _paciente.Id
+
+            };
+            await Navigation.PushAsync(new CadastroMedicaoPage(paciente));
+           
+        }
+
+
+        private async Task<PacienteModel> ObterPacientePorIdAsync(Guid pacienteId)
+        {
+            try
+            {
+                HttpResponseMessage response = await _httpClient.GetAsync($"https://localhost:7125/api/Paciente/{pacienteId}");
+                response.EnsureSuccessStatusCode();
+
+                string json = await response.Content.ReadAsStringAsync();
+                var paciente = JsonConvert.DeserializeObject<PacienteModel>(json);
+
+                return paciente;
+            }
+            catch (Exception ex)
+            {
+                // Trate qualquer exceção que possa ocorrer ao fazer a chamada à API
+                Console.WriteLine($"Erro ao buscar informações do paciente: {ex.Message}");
+                return null;
             }
         }
     }

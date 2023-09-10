@@ -13,7 +13,6 @@ public partial class CadastroPacientePage : ContentPage
         InitializeComponent();
         _tipoUsuario = tipoUsuario;
     }
-    HttpClient client = new HttpClient();
 
     private TipoUsuario _tipoUsuario;
 

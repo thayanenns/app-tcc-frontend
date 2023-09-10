@@ -2,14 +2,16 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppTccFrontend.Pages.HomePacientePage"
-             Title="HomePacientePage">
+             Title="Medições" >
     <StackLayout>
+        <Button Text="Inserir Nova Medição" Clicked="OnInserirMedicaoClicked" HorizontalOptions="EndAndExpand" Margin="10" />
         <ListView x:Name="DiasListView" ItemsSource="{Binding _medicoesPorDia}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <Frame BorderColor="Gray" Padding="10">
                             <StackLayout>
+
                                 <Label Text="{Binding DataDia, StringFormat='Data: {0:dd/MM/yyyy}'}"
                                        FontSize="18"
                                        HorizontalOptions="CenterAndExpand"

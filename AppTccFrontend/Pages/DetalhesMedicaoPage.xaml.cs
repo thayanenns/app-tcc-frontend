@@ -1,5 +1,7 @@
+using AppTccFrontend.Models;
 using AppTccFrontend.Models.Dtos;
 using Microsoft.Maui.Controls;
+using System.Collections.ObjectModel;
 
 namespace AppTccFrontend.Pages
 {
@@ -13,3 +15,4 @@ namespace AppTccFrontend.Pages
         }
     }
 }
+ 
