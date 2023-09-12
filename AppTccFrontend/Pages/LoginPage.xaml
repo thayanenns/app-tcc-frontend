@@ -16,9 +16,9 @@
             Text="Senha" />
             <Entry Placeholder="Digite sua senha" x:Name="entSenha" IsPassword="True"/>
 
-        <Button Text="Entrar" x:Name="btnEntrar" Clicked="btnEntrar_Clicked" Margin="10"/>
+        <Button Text="Entrar" x:Name="btnEntrar" Clicked="btnEntrar_Clicked" Margin="10" BackgroundColor="#0065A4"/>
         <Button x:Name="btnRegistrar"
-                Clicked ="btnRegistrar_Clicked" Text="Registre-se" Margin="10"/>
+                Clicked ="btnRegistrar_Clicked" Text="Registre-se" Margin="10" BackgroundColor="#6C94BC"/>
 
     </StackLayout>
 </ContentPage>

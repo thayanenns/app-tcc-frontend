@@ -7,9 +7,12 @@
     <StackLayout Padding="16">
         <Label Text="Informe os dados" FontSize="18" Margin="10" HorizontalOptions="CenterAndExpand" />
 
-        <Entry Placeholder="Glicemia" x:Name="entGlicemia" Margin="15" />
+        
+        <Entry Placeholder="Batimentos" x:Name="entBatimentos" Margin="15" />
+
         <Entry Placeholder="Pressão Sistólica" x:Name="entPressaoSistolica" />
         <Entry Placeholder="Pressão Diastólica" x:Name="entPressaoDiastolica" />
+        <Entry Placeholder="Glicemia" x:Name="entGlicemia" Margin="15" />
 
         <Label Text="Em Jejum?" FontSize="18" />
         <RadioButton Content="Sim" CheckedChanged="RadioButton_CheckedChanged" x:Name="rbSim"

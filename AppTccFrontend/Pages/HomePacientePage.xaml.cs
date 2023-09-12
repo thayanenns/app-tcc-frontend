@@ -21,6 +21,8 @@ namespace AppTccFrontend.Pages
             InitializeComponent();
             _medicoesPorDia = new List<MedicaoPorDiaDto>();
             _paciente = paciente;
+           
+
         }
 
         protected override async void OnAppearing()
@@ -32,6 +34,12 @@ namespace AppTccFrontend.Pages
                 var pacienteId = _paciente.Id;
                 _medicoesPorDia = await ObterMedicoesPorDiaAsync(pacienteId);
                 DiasListView.ItemsSource = _medicoesPorDia;
+                NomeLabel.Text = $"Nome: {_paciente.Nome}";
+                DataNascimentoLabel.Text = $"Data de Nascimento: {_paciente.DataNascimento.ToString("dd/MM/yyyy")}";
+                SexoLabel.Text = $"Sexo: {_paciente.Sexo}";
+                TelefoneLabel.Text = $"Telefone: {_paciente.Telefone}";
+
+
             }
             catch (Exception ex)
             {
@@ -69,6 +77,7 @@ namespace AppTccFrontend.Pages
             await Navigation.PushAsync(new CadastroMedicaoPage(paciente));
            
         }
+
 
 
         private async Task<PacienteModel> ObterPacientePorIdAsync(Guid pacienteId)

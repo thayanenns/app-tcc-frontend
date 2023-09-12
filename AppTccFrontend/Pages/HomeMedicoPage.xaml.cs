@@ -36,6 +36,7 @@ namespace AppTccFrontend.Pages
                 var medicoId = _medico.Id; // Use o Id do médico autenticado
                 _pacientes = await ObterPacientesAsync(medicoId);
                 PacientesListView.ItemsSource = _pacientes;
+
             }
             catch (Exception ex)
             {

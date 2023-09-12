@@ -28,6 +28,7 @@ public partial class CadastroMedicaoPage : ContentPage
             var novaMedicao = new
             {
                 DataMedicao = dataAtual.ToUniversalTime(),
+                Batimentos = entBatimentos.Text,
                 Glicemia = int.Parse(entGlicemia.Text),
                 PressaoSistolica = int.Parse(entPressaoSistolica.Text),
                 PressaoDiastolica = int.Parse(entPressaoDiastolica.Text),
@@ -41,6 +42,7 @@ public partial class CadastroMedicaoPage : ContentPage
 
             await DisplayAlert("Sucesso", "Cadastro realizado!", "OK");
 
+            entBatimentos.Text = "";
             entGlicemia.Text = "";
             entPressaoSistolica.Text = "";
             entPressaoDiastolica.Text = "";

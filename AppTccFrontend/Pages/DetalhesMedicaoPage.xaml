@@ -2,13 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:converters="clr-namespace:AppTccFrontend.NovaPasta1;assembly=AppTccFrontend"
+
              x:Class="AppTccFrontend.Pages.DetalhesMedicaoPage"
              
              Title="DetalhesMedicaoPage">
 
     <ContentPage.Resources>
         <ResourceDictionary>
-            <!-- Adicione seu conversor como um recurso -->
             <converters:ConnversorBoolean x:Key="ConversorBoolean" />
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -35,73 +35,96 @@
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
 
-
-
                             <Frame BackgroundColor="White"
-           BorderColor="Gray"
-           CornerRadius="10"
-           Padding="10"
-           Margin="5"
-           Grid.Row="0"
-           Grid.Column="1">
+                                   BorderColor="blue"
+                                   CornerRadius="19"
+                                   Padding= "10"
+                                   Margin="20"
+                                   HeightRequest="100"
+                                   
+                                   Grid.Row="0"
+                                   Grid.Column="1">
                                 <StackLayout>
-                                    <Label Text="Pressão Sistólica"
-                   FontSize="18"
-                   HorizontalOptions="Center" />
-                                    <Label Text="{Binding PressaoSistolica}"
-                   FontSize="18"
-                   HorizontalOptions="Center" />
+                                    <Label Text="Pressão Arterial"
+                                           FontSize="18"
+                                           HorizontalOptions="Center" />
+                                    <Label FontSize="18" HorizontalOptions="Center" Padding="15">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="{Binding PressaoSistolica}" />
+                                                <Span Text="/" />
+                                                <Span Text="{Binding PressaoDiastolica}" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+
+
+
                                 </StackLayout>
                             </Frame>
+                            
+                            
 
                             <Frame BackgroundColor="White"
-           BorderColor="Gray"
-           CornerRadius="10"
-           Padding="10"
-           Margin="5"
-           Grid.Row="1"
-           Grid.Column="0">
+                                   BorderColor="Gray"
+                                   CornerRadius="19"
+                                   Padding="10"
+                                   Margin="20"
+                                   
+                                   Grid.Row="1"
+                                   Grid.Column="1">
                                 <StackLayout>
-                                    <Label Text="Pressão Diastólica"
-                   FontSize="18"
-                   HorizontalOptions="Center" />
+                                    <Label Text= "Peso e Altura"
+                                           FontSize="18"
+                                           HorizontalOptions="Center" />
                                     <Label Text="{Binding PressaoDiastolica}"
-                   FontSize="18"
-                   HorizontalOptions="Center" />
+                                           FontSize="18"
+                                           Padding="15"
+                                           HorizontalOptions="Center" />
                                 </StackLayout>
                             </Frame>
 
                             <Frame BackgroundColor="White"
-                               BorderColor="Gray"
-                               CornerRadius="10"
-                               Padding="10"
-                                Margin="5"
-                                Grid.Row="0"
-                                Grid.Column="0">
+                                   BorderColor="Gray"
+                                   CornerRadius="19"
+                                   Padding= "10"
+                                   Margin="10"
+                                   
+                                   
+                                   Grid.Row="1"
+                                   Grid.Column="0">
                                 <StackLayout>
                                     <Label Text="Glicemia"
-                                    FontSize="18"
-                                    HorizontalOptions="Center" />
+                                           FontSize="18"
+                                           HorizontalOptions="Center" />
                                     <Label  Text="{Binding Glicemia}"
-                                        FontSize="18"
-                                        HorizontalOptions="Center" />
+                                            FontSize="18"
+                                            Padding="15"
+                                            HorizontalOptions="Center" />
+                                    <Label Text="Em Jejum?"
+                                           FontSize="18"
+                                           HorizontalOptions="Center" />
+                                    <Label Text="{Binding EmJejum, Converter={StaticResource ConversorBoolean}}"/>
+
                                 </StackLayout>
                             </Frame>
 
                             <Frame BackgroundColor="White"
-                                BorderColor="Gray"
-           CornerRadius="10"
-           Padding="10"
-           Margin="5"
-           Grid.Row="1"
-           Grid.Column="1">
+                                   CornerRadius="19"
+                                   Padding= "10"
+                                   Margin="10"
+                                   HeightRequest="100"
+                                   WidthRequest="180"
+                                   Grid.Row="0"
+                                   Grid.Column="0">
                                 <StackLayout>
-                                    <Label Text="Em Jejum"
-                   FontSize="18"
-                   HorizontalOptions="Center" />
-                                    <Label Text="{Binding EmJejum, Converter={StaticResource ConversorBoolean}}"
-                   FontSize="18"
-                   HorizontalOptions="Center" />
+                                    <Label Text="Batimentos"
+                                           FontSize="18"
+                                           HorizontalOptions="Center" />
+                                    <Label Text="{Binding Batimentos} "
+                                           FontSize="18"
+                                           Padding="15"
+                                           HorizontalOptions="Center" />
                                 </StackLayout>
                             </Frame>
                         </Grid>
@@ -110,7 +133,23 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </StackLayout>
-
     </ScrollView>
-
 </ContentPage>
+<!--<Frame BackgroundColor="White"
+                                   CornerRadius="19"
+                                   Padding= "10"
+                                   Margin="15"
+                                   HeightRequest="100"
+                                   WidthRequest="180"
+                                   Grid.Row="1"
+                                   Grid.Column="1">
+                                <StackLayout>
+                                    <Label Text="Em Jejum"
+                                           FontSize="18"
+                                           HorizontalOptions="Center" />
+                                    <Label Text="{Binding EmJejum, Converter={StaticResource ConversorBoolean}}"
+                                           FontSize="18"
+                                           Padding="15"
+                                           HorizontalOptions="Center" />
+                                </StackLayout>
+                            </Frame>-->

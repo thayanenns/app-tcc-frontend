@@ -3,20 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppTccFrontend.Pages.HomePacientePage"
              Title="Medições" >
-    <StackLayout>
-        <Button Text="Inserir Nova Medição" Clicked="OnInserirMedicaoClicked" HorizontalOptions="EndAndExpand" Margin="10" />
+
+    <StackLayout Spacing="10" Padding="10">
+        <StackLayout BackgroundColor="#00B5E4" Padding="10" Spacing="5" VerticalOptions="Start">
+            <Label x:Name="NomeLabel" FontSize="18" TextColor="White" />
+
+            <Label x:Name="DataNascimentoLabel" FontSize="16" TextColor="White" />
+
+            <Label x:Name="SexoLabel" FontSize="16" TextColor="White" />
+
+            <Label x:Name="TelefoneLabel" FontSize="16" TextColor="White" />
+        </StackLayout>
+
+        <!-- Botão para inserir nova medição -->
+        <Button Text="Inserir Nova Medição" Clicked="OnInserirMedicaoClicked" HorizontalOptions="EndAndExpand" BackgroundColor="#3498db" TextColor="White" />
+
+        <!-- Lista de medições -->
         <ListView x:Name="DiasListView" ItemsSource="{Binding _medicoesPorDia}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Frame BorderColor="Gray" Padding="10">
+                        <Frame BorderColor="Gray" Padding="10" Margin="0,5">
                             <StackLayout>
-
                                 <Label Text="{Binding DataDia, StringFormat='Data: {0:dd/MM/yyyy}'}"
-                                       FontSize="18"
-                                       HorizontalOptions="CenterAndExpand"
-                                       Margin="0,10" />
-                                <Button Text="Ver Medições" Clicked="OnDateSelected" CommandParameter="{Binding .}" />
+                                       FontSize="16"
+                                       HorizontalOptions="Center"
+                                       Margin="0,5" />
+
+                                <Button Text="Ver Medições" Clicked="OnDateSelected" CommandParameter="{Binding .}" BackgroundColor="#3498db" TextColor="White" FontSize="16" />
                             </StackLayout>
                         </Frame>
                     </ViewCell>
