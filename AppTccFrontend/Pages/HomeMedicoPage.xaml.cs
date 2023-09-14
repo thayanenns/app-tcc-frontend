@@ -59,16 +59,16 @@ namespace AppTccFrontend.Pages
 
         private void OnButtonClicked(object sender, EventArgs e)
         {
-            if (sender is Button button && button.CommandParameter is DateTime selectedDate)
+            if (sender is Button button && button.CommandParameter is PacienteModel paciente)
             {
-                // Crie a página HomeMedicoPage e passe o médico e o paciente como parâmetros
-                //Navigation.PushAsync(new HomeMedicoPage(_medico, Paciente));
-                Navigation.PushAsync(new HomePacientePage(Paciente));
-
+                // Vá para a página HomePacientePage com o paciente selecionado
+                Navigation.PushAsync(new HomePacientePage(paciente));
             }
+            // Crie a página HomeMedicoPage e passe o médico e o paciente como parâmetros
+            
         }
 
-        private void sbBusca_SearchButtonPressed(object sender, EventArgs e)
+            private void sbBusca_SearchButtonPressed(object sender, EventArgs e)
         {
 
         }
