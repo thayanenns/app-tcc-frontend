@@ -3,60 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppTccFrontend.Pages.HomeMedicoPage"
              Title="Lista de pacientes">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
 
-        </Grid.RowDefinitions>
-
-        <ListView x:Name="PacientesListView"
-              Grid.Row="1"
-              Margin="10">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Frame BackgroundColor="White"
+    <ListView x:Name="PacientesListView">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Frame BackgroundColor="White"
                            BorderColor="Gray"
                            CornerRadius="10"
-                           Padding="10"
-                           Margin="0,5">
-                            <StackLayout>
-                                <Label Text="Nome:"
-                                   FontSize="18" />
-                                <Label Text="{Binding Nome}"
-                                   FontSize="16" 
-                                   Margin="0,5,0,10" />
+                           Margin="10">
+                        <StackLayout Padding="10">
 
-                                <Label Text="Data de Nascimento:"
-                                   FontSize="18" />
-                                <Label Text="{Binding DataNascimento}"
-                                   FontSize="16"
-                                   Margin="0,5,0,10" />
+                            <Label Text="{Binding Nome}" FontSize="16" FontAttributes="Bold" />
 
-                                <Label Text="Sexo:"
-                                   FontSize="18" />
-                                <Label Text="{Binding Sexo}"
-                                   FontSize="16"
-                                   Margin="0,5,0,10" />
-
-                                <Label Text="Telefone:"
-                                   FontSize="18" />
-                                <Label Text="{Binding Telefone}"
-                                   FontSize="16"
-                                   Margin="0,5,0,10" />
-                                <Button
-                                    x:Name="BtnAcompanhar"
+                            <Label Text="{Binding Telefone}" FontSize="14" />
+                            <Button x:Name="BtnAcompanhar"
+                                    FontSize="13"
                                     Text="Acompanhar"
                                     Clicked="OnButtonClicked"
                                     CommandParameter="{Binding .}"
-                                    HorizontalOptions="Center"/>
-                            </StackLayout>
-
-                        </Frame>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </Grid>
+                                    HorizontalOptions="End"
+                                    BackgroundColor="#233e95"
+                                    TextColor="White"/>
+                        </StackLayout>
+                    </Frame>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>

@@ -68,8 +68,9 @@
                             <Frame BackgroundColor="White"
                                    BorderColor="Gray"
                                    CornerRadius="19"
-                                   Padding="10"
+                                   Padding= "10"
                                    Margin="20"
+                                   HeightRequest="100"
                                    
                                    Grid.Row="1"
                                    Grid.Column="1">
@@ -88,9 +89,9 @@
                                    BorderColor="Gray"
                                    CornerRadius="19"
                                    Padding= "10"
-                                   Margin="10"
-                                   
-                                   
+                                   Margin="20"
+                                   HeightRequest="100"
+                                                                  
                                    Grid.Row="1"
                                    Grid.Column="0">
                                 <StackLayout>
@@ -112,9 +113,8 @@
                             <Frame BackgroundColor="White"
                                    CornerRadius="19"
                                    Padding= "10"
-                                   Margin="10"
+                                   Margin="20"
                                    HeightRequest="100"
-                                   WidthRequest="180"
                                    Grid.Row="0"
                                    Grid.Column="0">
                                 <StackLayout>

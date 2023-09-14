@@ -24,6 +24,7 @@ namespace AppTccFrontend.Pages
             InitializeComponent();
             _medico = medico;
             Paciente = paciente;
+           
 
         }
 
@@ -33,10 +34,13 @@ namespace AppTccFrontend.Pages
             base.OnAppearing();
             try
             {
-                var medicoId = _medico.Id; // Use o Id do médico autenticado
+              
+                
+                var medicoId = _medico.Id; 
                 _pacientes = await ObterPacientesAsync(medicoId);
                 PacientesListView.ItemsSource = _pacientes;
 
+              
             }
             catch (Exception ex)
             {
@@ -66,11 +70,6 @@ namespace AppTccFrontend.Pages
             }
             // Crie a página HomeMedicoPage e passe o médico e o paciente como parâmetros
             
-        }
-
-            private void sbBusca_SearchButtonPressed(object sender, EventArgs e)
-        {
-
         }
     }
 }
