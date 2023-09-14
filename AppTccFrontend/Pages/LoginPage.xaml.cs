@@ -15,6 +15,13 @@ public partial class LoginPage : ContentPage
     public LoginPage()
     {
         InitializeComponent();
+        lblCadastro.GestureRecognizers.Add(new TapGestureRecognizer
+        {
+            Command = new Command(() =>
+            {
+                Navigation.PushAsync(new EscolhaPerfilPage());
+            })
+        });
     }
     private readonly string urlBase = "https://localhost:7125/api/login";
 

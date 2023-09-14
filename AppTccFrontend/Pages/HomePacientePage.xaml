@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppTccFrontend.Pages.HomePacientePage"
-             Title="Medições" >
+             Title="Medições" BackgroundColor="White" >
 
     <StackLayout Spacing="10" Padding="10">
-        <StackLayout BackgroundColor="#00B5E4" Padding="10" Spacing="5" VerticalOptions="Start">
+        <StackLayout BackgroundColor="#2e4ca7" Padding="10" Spacing="5" VerticalOptions="Start">
             <Label x:Name="NomeLabel" FontSize="18" TextColor="White" />
 
             <Label x:Name="DataNascimentoLabel" FontSize="16" TextColor="White" />
@@ -15,10 +15,9 @@
             <Label x:Name="TelefoneLabel" FontSize="16" TextColor="White" />
         </StackLayout>
 
-        <!-- Botão para inserir nova medição -->
-        <Button Text="Inserir Nova Medição" Clicked="OnInserirMedicaoClicked" HorizontalOptions="EndAndExpand" BackgroundColor="#3498db" TextColor="White" />
+      
+        <Button Text="Inserir nova medição" Clicked="OnInserirMedicaoClicked" HorizontalOptions="EndAndExpand" BackgroundColor="#233e95" TextColor="White" />
 
-        <!-- Lista de medições -->
         <ListView x:Name="DiasListView" ItemsSource="{Binding _medicoesPorDia}">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -30,12 +29,21 @@
                                        HorizontalOptions="Center"
                                        Margin="0,5" />
 
-                                <Button Text="Ver Medições" Clicked="OnDateSelected" CommandParameter="{Binding .}" BackgroundColor="#3498db" TextColor="White" FontSize="16" />
+                                <Button Text="Ver medições" Clicked="OnDateSelected" CommandParameter="{Binding .}" BackgroundColor="#233e95" TextColor="White" FontSize="16" />
                             </StackLayout>
                         </Frame>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+
+        <Label x:Name="semMedicoes" Text="Sem medições disponíveis." FontSize="16" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False">
+            <Label.Triggers>
+                <DataTrigger TargetType="Label" Binding="{Binding _medicoesPorDia.Count}" Value="0">
+                    <Setter Property="IsVisible" Value="True" TargetName="semMedicoes" />
+                </DataTrigger>
+            </Label.Triggers>
+        </Label>
+
     </StackLayout>
 </ContentPage>

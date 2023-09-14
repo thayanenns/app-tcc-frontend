@@ -2,15 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppTccFrontend.Pages.EscolhaPerfilPage"
-             Title="Escolha de Perfil">
+             Title="Escolha de Perfil" NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
-            <Image Source="profile_icon.png" HeightRequest="100" WidthRequest="100" />
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20" Margin="0,0,0,80" >
 
             <Label Text="Escolha seu perfil" FontSize="30" FontAttributes="Bold" TextColor="#333333" HorizontalOptions="Center" />
 
-            <Button Text="Sou paciente" Clicked="OnPacienteClicked" BackgroundColor="#3498db" TextColor="#FFFFFF"  FontSize="18" WidthRequest="200" HeightRequest="50" />
-            <Button Text="Sou médico" Clicked="OnMedicoClicked" BackgroundColor="#3498db" TextColor="#FFFFFF"  FontSize="18" WidthRequest="200" HeightRequest="50" />
+            <Button Text="Sou paciente" Clicked="OnPacienteClicked" BackgroundColor="#173084" TextColor="#FFFFFF"  FontSize="18" WidthRequest="200" HeightRequest="50" />
+            <Button Text="Sou médico" Clicked="OnMedicoClicked" BackgroundColor="#173084" TextColor="#FFFFFF"  FontSize="18" WidthRequest="200" HeightRequest="50" />
 
         </StackLayout>
     </ContentPage.Content>

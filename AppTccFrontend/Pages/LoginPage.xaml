@@ -4,7 +4,7 @@
              x:Class="AppTccFrontend.Pages.LoginPage"
              Title="LoginPage"
              NavigationPage.HasNavigationBar="False">
-    <StackLayout VerticalOptions="CenterAndExpand" Margin="16" Padding="16">
+    <StackLayout VerticalOptions="CenterAndExpand" Margin="16" Padding="16" Spacing="10">
         <Label 
             Text="Login"
             VerticalOptions="Center" 
@@ -14,11 +14,22 @@
             <Entry Placeholder="Digite seu e-mail" x:Name="entEmail"/>
         <Label 
             Text="Senha" />
-            <Entry Placeholder="Digite sua senha" x:Name="entSenha" IsPassword="True"/>
+            <Entry Placeholder="Digite sua senha" x:Name="entSenha" IsPassword="True"   />
 
-        <Button Text="Entrar" x:Name="btnEntrar" Clicked="btnEntrar_Clicked" Margin="10" BackgroundColor="#0065A4"/>
-        <Button x:Name="btnRegistrar"
-                Clicked ="btnRegistrar_Clicked" Text="Registre-se" Margin="10" BackgroundColor="#6C94BC"/>
-
+        <Button Text="Entrar" x:Name="btnEntrar" Clicked="btnEntrar_Clicked" Margin="10" BackgroundColor="#173084"/>
+       <!--- <Button x:Name="btnRegistrar"
+                Clicked ="btnRegistrar_Clicked" Text="Registre-se" Margin="10" BackgroundColor="#7681a3"/>-->
+        <Label HorizontalOptions="Center" x:Name="lblCadastro" VerticalOptions="CenterAndExpand">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Ainda não tem cadastro? " />
+                    <Span Text="Crie agora" TextColor="#173084" TextDecorations="Underline">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding CadastroCommand}" />
+                        </Span.GestureRecognizers>
+                    </Span>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
     </StackLayout>
 </ContentPage>

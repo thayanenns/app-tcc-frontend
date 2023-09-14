@@ -20,26 +20,35 @@ namespace AppTccFrontend.Pages
         {
             InitializeComponent();
             _medicoesPorDia = new List<MedicaoPorDiaDto>();
+            if (_medicoesPorDia.Count == 0)
+            {
+                semMedicoes.IsVisible = true;
+            }
+            else
+            {
+                semMedicoes.IsVisible = false;
+            }
+            
             _paciente = paciente;
-           
 
         }
 
         protected override async void OnAppearing()
         {
             base.OnAppearing();
+           
 
             try
             {
+                DateTime dtNasc = _paciente.DataNascimento;
+                var idade = CalcularIdade(dtNasc);
                 var pacienteId = _paciente.Id;
                 _medicoesPorDia = await ObterMedicoesPorDiaAsync(pacienteId);
                 DiasListView.ItemsSource = _medicoesPorDia;
                 NomeLabel.Text = $"Nome: {_paciente.Nome}";
-                DataNascimentoLabel.Text = $"Data de Nascimento: {_paciente.DataNascimento.ToString("dd/MM/yyyy")}";
+                DataNascimentoLabel.Text = $"Idade: {idade}";
                 SexoLabel.Text = $"Sexo: {_paciente.Sexo}";
                 TelefoneLabel.Text = $"Telefone: {_paciente.Telefone}";
-
-
             }
             catch (Exception ex)
             {
@@ -78,7 +87,15 @@ namespace AppTccFrontend.Pages
            
         }
 
-
+        private static int CalcularIdade(DateTime dataNascimento)
+        {
+            int idade = DateTime.Now.Year - dataNascimento.Year;
+            if(DateTime.Now.DayOfYear < dataNascimento.DayOfYear)
+            {
+                --idade;
+            }
+            return idade;
+        }
 
         private async Task<PacienteModel> ObterPacientePorIdAsync(Guid pacienteId)
         {
