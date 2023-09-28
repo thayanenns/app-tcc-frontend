@@ -20,14 +20,6 @@ namespace AppTccFrontend.Pages
         {
             InitializeComponent();
             _medicoesPorDia = new List<MedicaoPorDiaDto>();
-            if (_medicoesPorDia.Count == 0)
-            {
-                semMedicoes.IsVisible = true;
-            }
-            else
-            {
-                semMedicoes.IsVisible = false;
-            }
             
             _paciente = paciente;
 
@@ -49,6 +41,7 @@ namespace AppTccFrontend.Pages
                 DataNascimentoLabel.Text = $"Idade: {idade}";
                 SexoLabel.Text = $"Sexo: {_paciente.Sexo}";
                 TelefoneLabel.Text = $"Telefone: {_paciente.Telefone}";
+                DomicilioLabel.Text = $"Reside em: {_paciente.Domicilio}";
             }
             catch (Exception ex)
             {
@@ -111,7 +104,6 @@ namespace AppTccFrontend.Pages
             }
             catch (Exception ex)
             {
-                // Trate qualquer exceção que possa ocorrer ao fazer a chamada à API
                 Console.WriteLine($"Erro ao buscar informações do paciente: {ex.Message}");
                 return null;
             }

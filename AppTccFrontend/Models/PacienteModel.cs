@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using AppTccFrontend.Enums;
+using System.ComponentModel.DataAnnotations.Schema;
 
 
 namespace AppTccFrontend.Models
@@ -12,6 +13,9 @@ namespace AppTccFrontend.Models
 
         public ICollection<MedicaoModel>? Medicoes { get; set; }
 
+        public TipoDiabetes TipoDiabetes { get; set; }
+
+
         public PacienteModel() { }
 
        
@@ -19,7 +23,6 @@ namespace AppTccFrontend.Models
         {
             get
             {
-                // Calcule a idade com base na Data de Nascimento
                 DateTime hoje = DateTime.Today;
                 int idade = hoje.Year - DataNascimento.Year;
                 if (DataNascimento.Date > hoje.AddYears(-idade))

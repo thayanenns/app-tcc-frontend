@@ -2,11 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:converters="clr-namespace:AppTccFrontend.NovaPasta1;assembly=AppTccFrontend"
-
              x:Class="AppTccFrontend.Pages.DetalhesMedicaoPage"
-             
-             Title="DetalhesMedicaoPage">
-
+             Title="Detalhes da Medição">
     <ContentPage.Resources>
         <ResourceDictionary>
             <converters:ConnversorBoolean x:Key="ConversorBoolean" />
@@ -16,140 +13,152 @@
     <ScrollView>
         <StackLayout>
             <Label Text="{Binding DataDia, StringFormat='Data: {0:dd/MM/yyyy}'}"
-               FontSize="20"
-               HorizontalOptions="CenterAndExpand"
-               Margin="0,10" />
+           FontSize="18"
+           HorizontalOptions="CenterAndExpand"
+           FontAttributes="Bold"
+                   
+           Margin="0,10" />
 
-            <CollectionView x:Name="MedicoesCollectionView"
-                        ItemsSource="{Binding Medicoes}">
+            <CollectionView ItemsSource="{Binding Medicoes}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                            </Grid.RowDefinitions>
-
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-
+                        <StackLayout>
                             <Frame BackgroundColor="White"
-                                   BorderColor="blue"
-                                   CornerRadius="19"
-                                   Padding= "10"
-                                   Margin="20"
-                                   HeightRequest="100"
-                                   
-                                   Grid.Row="0"
-                                   Grid.Column="1">
-                                <StackLayout>
-                                    <Label Text="Pressão Arterial"
-                                           FontSize="18"
-                                           HorizontalOptions="Center" />
-                                    <Label FontSize="18" HorizontalOptions="Center" Padding="15">
-                                        <Label.FormattedText>
-                                            <FormattedString>
-                                                <Span Text="{Binding PressaoSistolica}" />
-                                                <Span Text="/" />
-                                                <Span Text="{Binding PressaoDiastolica}" />
-                                            </FormattedString>
-                                        </Label.FormattedText>
-                                    </Label>
+                                   BorderColor="black"
+                                   CornerRadius="10"
+                                   Padding="10"
+                                   Margin="20,10"
+                                   HeightRequest="110"> 
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
 
+                                    <StackLayout Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Label Text="Glicemia"
+                                                FontSize="16"
+                                                HorizontalOptions="Center"
+                                                FontAttributes="Bold" />
 
+                                        <Label Text="{Binding Glicemia}"
+                                                FontSize="20"
+                                                HorizontalOptions="Center"
+                                                FontAttributes="Bold" />    
+                                    </StackLayout>
 
-                                </StackLayout>
+                                    <StackLayout Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Label Text="Em Jejum"
+                                                FontSize="16"
+                                                HorizontalOptions="Center"
+                                                FontAttributes="Bold"/>
+
+                                        <Label Text="{Binding EmJejum, Converter={StaticResource ConversorBoolean}, ConverterParameter=EstadoJejumText}"
+                                                FontSize="20"
+                                                HorizontalOptions="Center"
+                                                FontAttributes="Bold" />    
+                                    </StackLayout>
+                                </Grid>
                             </Frame>
+
                             
-                            
-
-                            <Frame BackgroundColor="White"
+                      
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Frame BackgroundColor="White"
                                    BorderColor="Gray"
-                                   CornerRadius="19"
-                                   Padding= "10"
-                                   Margin="20"
+                                   CornerRadius="10"
+                                   Padding="10"
+                                   Margin="10"
                                    HeightRequest="100"
-                                   
-                                   Grid.Row="1"
-                                   Grid.Column="1">
-                                <StackLayout>
-                                    <Label Text= "Peso e Altura"
-                                           FontSize="18"
-                                           HorizontalOptions="Center" />
-                                    <Label Text="{Binding PressaoDiastolica}"
-                                           FontSize="18"
-                                           Padding="15"
-                                           HorizontalOptions="Center" />
-                                </StackLayout>
-                            </Frame>
+                                   WidthRequest="130">
+                                    <StackLayout>
+                                        <Label Text="Pressão Arterial"
+                                           FontSize="16"
+                                           HorizontalOptions="Center" FontAttributes="Bold" />
+                                        <Label FontSize="20" HorizontalOptions="Center" Padding="10">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding PressaoSistolica}" FontAttributes="Bold"/>
+                                                    <Span Text="/"/>
+                                                    <Span Text="{Binding PressaoDiastolica}" FontAttributes="Bold"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                    </StackLayout>
+                                </Frame>
 
-                            <Frame BackgroundColor="White"
+                                <Frame BackgroundColor="White"
                                    BorderColor="Gray"
-                                   CornerRadius="19"
-                                   Padding= "10"
-                                   Margin="20"
+                                   CornerRadius="10"
+                                   Padding="10"
+                                   Margin="10"
                                    HeightRequest="100"
-                                                                  
-                                   Grid.Row="1"
-                                   Grid.Column="0">
-                                <StackLayout>
-                                    <Label Text="Glicemia"
-                                           FontSize="18"
-                                           HorizontalOptions="Center" />
-                                    <Label  Text="{Binding Glicemia}"
-                                            FontSize="18"
-                                            Padding="15"
-                                            HorizontalOptions="Center" />
-                                    <Label Text="Em Jejum?"
-                                           FontSize="18"
-                                           HorizontalOptions="Center" />
-                                    <Label Text="{Binding EmJejum, Converter={StaticResource ConversorBoolean}}"/>
+                                   WidthRequest="130">
+                                    <StackLayout>
+                                        <Label Text="Batimentos"
+                                           FontSize="16"
+                                           HorizontalOptions="Center"
+                                           FontAttributes="Bold" />
 
-                                </StackLayout>
-                            </Frame>
+                                        <Label Text="{Binding Batimentos}"
+                                           FontSize="20"
+                                           Padding="10"
+                                           HorizontalOptions="Center"
+                                           FontAttributes="Bold"/>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
 
-                            <Frame BackgroundColor="White"
-                                   CornerRadius="19"
-                                   Padding= "10"
-                                   Margin="20"
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Frame BackgroundColor="White"
+                                   BorderColor="Gray"
+                                   CornerRadius="10"
+                                   Padding="10"
+                                   Margin="10"
                                    HeightRequest="100"
-                                   Grid.Row="0"
-                                   Grid.Column="0">
-                                <StackLayout>
-                                    <Label Text="Batimentos"
-                                           FontSize="18"
-                                           HorizontalOptions="Center" />
-                                    <Label Text="{Binding Batimentos} "
-                                           FontSize="18"
-                                           Padding="15"
-                                           HorizontalOptions="Center" />
-                                </StackLayout>
-                            </Frame>
-                        </Grid>
+                                   WidthRequest="130">
+                                    <StackLayout>
+                                        <Label Text="Peso (kg)"
+                                           FontSize="16"
+                                           HorizontalOptions="Center"
+                                               
+                                           FontAttributes="Bold" />
 
+                                        <Label Text="{Binding Peso}"
+                                           FontSize="20"
+                                               Padding="10"
+                                           HorizontalOptions="Center"
+                                           FontAttributes="Bold" />
+                                    </StackLayout>
+                                </Frame>
+
+                                <Frame BackgroundColor="White"
+                                   BorderColor="Gray"
+                                   CornerRadius="10"
+                                   Padding="10"
+                                   Margin="10"
+                                   HeightRequest="100"
+                                   WidthRequest="130">
+                                    <StackLayout>
+                                        <Label Text="Altura (cm)"
+                                           FontSize="16"
+                                           HorizontalOptions="Center"
+                                           FontAttributes="Bold" />
+
+                                        <Label Text="{Binding Altura}"
+                                           FontSize="20"
+                                           Padding="10"
+                                           HorizontalOptions="Center"
+                                           FontAttributes="Bold" />
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </StackLayout>
     </ScrollView>
 </ContentPage>
-<!--<Frame BackgroundColor="White"
-                                   CornerRadius="19"
-                                   Padding= "10"
-                                   Margin="15"
-                                   HeightRequest="100"
-                                   WidthRequest="180"
-                                   Grid.Row="1"
-                                   Grid.Column="1">
-                                <StackLayout>
-                                    <Label Text="Em Jejum"
-                                           FontSize="18"
-                                           HorizontalOptions="Center" />
-                                    <Label Text="{Binding EmJejum, Converter={StaticResource ConversorBoolean}}"
-                                           FontSize="18"
-                                           Padding="15"
-                                           HorizontalOptions="Center" />
-                                </StackLayout>
-                            </Frame>-->
+
+

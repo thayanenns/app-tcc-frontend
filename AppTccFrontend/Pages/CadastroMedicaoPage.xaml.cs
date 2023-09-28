@@ -32,7 +32,9 @@ public partial class CadastroMedicaoPage : ContentPage
                 Glicemia = int.Parse(entGlicemia.Text),
                 PressaoSistolica = int.Parse(entPressaoSistolica.Text),
                 PressaoDiastolica = int.Parse(entPressaoDiastolica.Text),
-                EmJejum =rbJejum,
+                Peso = int.Parse(entPeso.Text),
+                Altura = int.Parse(entAltura.Text),
+                EmJejum = rbJejum,
                 PacienteId = _paciente.Id
             };
 

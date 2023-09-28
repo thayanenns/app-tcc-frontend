@@ -24,10 +24,8 @@ namespace AppTccFrontend.Pages
             InitializeComponent();
             _medico = medico;
             Paciente = paciente;
-           
 
         }
-
 
         protected override async void OnAppearing()
         {
@@ -48,8 +46,6 @@ namespace AppTccFrontend.Pages
             }
         }
 
-
-
         private async Task<ICollection<PacienteModel>> ObterPacientesAsync(Guid medicoId)
         {
             HttpResponseMessage response = await _httpClient.GetAsync($"https://localhost:7125/api/paciente?medicoId={medicoId}");
@@ -65,10 +61,8 @@ namespace AppTccFrontend.Pages
         {
             if (sender is Button button && button.CommandParameter is PacienteModel paciente)
             {
-                // Vá para a página HomePacientePage com o paciente selecionado
                 Navigation.PushAsync(new HomePacientePage(paciente));
             }
-            // Crie a página HomeMedicoPage e passe o médico e o paciente como parâmetros
             
         }
     }

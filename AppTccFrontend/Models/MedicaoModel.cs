@@ -16,6 +16,8 @@ namespace AppTccFrontend.Models
         public int PressaoSistolica { get; set; }
         public int PressaoDiastolica { get; set; }
         public bool EmJejum { get; set; }
+        public int Peso { get; set; }
+        public int Altura { get; set; }
         public PacienteModel? Paciente { get; set; }
         public Guid PacienteId { get; set; }
 

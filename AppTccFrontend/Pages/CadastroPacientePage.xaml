@@ -3,51 +3,59 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppTccFrontend.Pages.CadastroPacientePage"
              xmlns:local="clr-namespace:AppTccFrontend.Enums"
+             xmlns:converters="clr-namespace:AppTccFrontend.NovaPasta1"
 
              Title="Cadastro de Paciente">
-    <ScrollView>
-        <StackLayout Margin="20">
-            <Label HorizontalOptions="CenterAndExpand" Margin="0,0,0,20"/>
 
-            <Entry Placeholder="Nome" x:Name="entNome"/>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ConnversorBoolean x:Key="TipoDiabetesPicker" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
-            <DatePicker x:Name="entDtNascimento" />
+    <ScrollView Margin="20">
+        <StackLayout Spacing="10">
+         
+            <Label Text="Nome" FontAttributes="Bold"/>
+            <Entry Placeholder="Digite seu nome" x:Name="entNome"/>
 
-           
-            <!--<Picker x:Name="pickerTipo" Title="Selecione o Tipo de Usuário">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type local:TipoUsuario}">
-                        <x:Static Member="local:TipoUsuario.Medico" />
-                        <x:Static Member="local:TipoUsuario.Paciente" />
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>--> 
+            <Label Text="Data de Nascimento" FontAttributes="Bold"/>
+            <DatePicker x:Name="entDtNascimento" Format="dd-MM-YYYY"/>
 
+            <Label Text="Sexo" FontAttributes="Bold"/>
+            <Entry Placeholder="Digite seu sexo" x:Name="entSexo"/>
 
-            <Entry Placeholder="Sexo" x:Name="entSexo"/>
+            <Label Text="Telefone" FontAttributes="Bold"/>
+            <Entry Placeholder="Digite seu telefone" x:Name="entTelefone"/>
 
-            <Entry Placeholder="Telefone" x:Name="entTelefone"/>
+            <Label Text="Domicílio" FontAttributes="Bold"/>
+            <Entry Placeholder="Digite seu domicílio" x:Name="entDomicilio"/>
 
-            <Entry Placeholder="Email" x:Name="entEmail"/>
+            <Label Text="Email" FontAttributes="Bold"/>
+            <Entry Placeholder="Digite seu email" x:Name="entEmail"/>
 
-            <Entry Placeholder="Senha" x:Name="entSenha" IsPassword="True"/>
+            <Label Text="Senha" FontAttributes="Bold"/>
+            <Entry Placeholder="Digite sua senha" x:Name="entSenha" IsPassword="True"/>
 
-            <Picker Title="Selecione o médico"
+            <Label Text="Tipo de Diabetes" FontAttributes="Bold"/>
+            <Picker Title="Selecione o Tipo de Diabetes" x:Name="tipoDiabetesPicker"/>
+
+            <Label Text="Selecione o médico" FontAttributes="Bold"/>
+            <Picker 
                     ItemsSource="{Binding Medicos}"
                     ItemDisplayBinding="{Binding Nome}"
                     SelectedItem="{Binding MedicoSelecionado}"
                     x:Name="pickerMedico"/>
 
-
             <Button Text="Salvar Paciente"
                     x:Name="SubmitBtn"
-                    BackgroundColor="#3498db"
+                    BackgroundColor="#173084"
                     TextColor="White"
                     FontAttributes="Bold"
                     CornerRadius="5"
                     Clicked="SubmitClicked"
                     Margin="0,20,0,0"
-                    HorizontalOptions="CenterAndExpand" />
+                    HorizontalOptions="Center"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

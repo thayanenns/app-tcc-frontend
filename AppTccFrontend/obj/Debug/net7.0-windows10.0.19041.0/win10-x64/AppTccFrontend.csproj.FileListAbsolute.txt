@@ -323,3 +323,5 @@ C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-win
 C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoapp.scale-100.png
+C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoapp.scale-100.jfif

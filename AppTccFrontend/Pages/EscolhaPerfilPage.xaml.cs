@@ -8,12 +8,10 @@ public partial class EscolhaPerfilPage : ContentPage
 	{
 		InitializeComponent();
 	}
-
-    //private string selectedProfile = "";
     
     private async void OnPacienteClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new CadastroPacientePage(TipoUsuario.Paciente));
+        await Navigation.PushAsync(new CadastroPacientePage(TipoUsuario.Paciente, TipoDiabetes.Outro));
     }
 
     private async void OnMedicoClicked(object sender, EventArgs e)

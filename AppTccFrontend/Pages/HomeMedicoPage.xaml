@@ -17,6 +17,9 @@
                             <Label Text="{Binding Nome}" FontSize="16" FontAttributes="Bold" />
 
                             <Label Text="{Binding Telefone}" FontSize="14" />
+                            
+                            <Label Text="{Binding Domicilio}" FontSize="14" />
+
                             <Button x:Name="BtnAcompanhar"
                                     FontSize="13"
                                     Text="Acompanhar"

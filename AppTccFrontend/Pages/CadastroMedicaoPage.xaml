@@ -1,25 +1,46 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppTccFrontend.Pages.CadastroMedicaoPage"
-             Title="Cadastro de medição">
-    
-    <StackLayout Padding="16">
-        <Label Text="Informe os dados" FontSize="18" Margin="10" HorizontalOptions="CenterAndExpand" />
+             Title="Cadastro de Medição">
 
-        
-        <Entry Placeholder="Batimentos" x:Name="entBatimentos" Margin="15" />
+    <StackLayout Padding="14" Spacing="10">
+        <Label Text="Informe os dados da medição" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
 
-        <Entry Placeholder="Pressão Sistólica" x:Name="entPressaoSistolica" />
-        <Entry Placeholder="Pressão Diastólica" x:Name="entPressaoDiastolica" />
-        <Entry Placeholder="Glicemia" x:Name="entGlicemia" Margin="15" />
+        <StackLayout Orientation="Horizontal" Spacing="10">
+            <Label Text="Batimentos:" FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
+            <Entry Placeholder="Batimentos" x:Name="entBatimentos" Keyboard="Numeric"/>
+        </StackLayout>
 
-        <Label Text="Em Jejum?" FontSize="18" />
-        <RadioButton Content="Sim" CheckedChanged="RadioButton_CheckedChanged" x:Name="rbSim"
-/>
-        <RadioButton Content="Não" CheckedChanged="RadioButton_CheckedChanged" x:Name="rbNao"/>
+        <StackLayout Orientation="Horizontal" Spacing="10">
+            <Label Text="Pressão :" FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
+            <Entry Placeholder="Pressão Sistólica" x:Name="entPressaoSistolica" Keyboard="Numeric"/>
+            <Label Text="/" FontSize="16" VerticalOptions="Center"/>
+            <Entry Placeholder="Pressão Diastólica" x:Name="entPressaoDiastolica" Keyboard="Numeric"/>
 
-        <Button Text="Salvar" Clicked="OnSalvarClicked" />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Spacing="10">
+            <Label Text="Glicemia :" FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
+            <Entry Placeholder="Glicemia" x:Name="entGlicemia" Keyboard="Numeric"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Spacing="10">
+            <Label Text="Peso (kg):" FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
+            <Entry Placeholder="Peso" x:Name="entPeso" Keyboard="Numeric"/>
+            <Label Text="Altura (cm):" FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
+            <Entry Placeholder="Altura" x:Name="entAltura" Keyboard="Numeric"/>
+        </StackLayout>
+
+        <Label Text="Em Jejum?" FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
+
+        <StackLayout Orientation="Horizontal" Spacing="20">
+            <RadioButton Content="Sim" CheckedChanged="RadioButton_CheckedChanged" x:Name="rbSim"/>
+            <RadioButton Content="Não" CheckedChanged="RadioButton_CheckedChanged" x:Name="rbNao"/>
+        </StackLayout>
+
+        <Label Text="" FontSize="15"/>
+
+
+        <Button Text="Salvar" Clicked="OnSalvarClicked" HorizontalOptions="Center" VerticalOptions="End"/>
     </StackLayout>
-
 </ContentPage>

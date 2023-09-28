@@ -35,7 +35,9 @@ public partial class CadastroMedicoPage : ContentPage
                 Tipo = _tipoUsuario,
                 Email = entEmail.Text,
                 Senha = entSenha.Text,
-                Crm = entCrm.Text
+                Crm = entCrm.Text,
+                Domicilio = entDomicilio.Text
+
 
                 // acctualFileUrl = imageUpload.Source.ToString()
 

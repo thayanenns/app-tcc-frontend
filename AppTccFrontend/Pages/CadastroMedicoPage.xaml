@@ -3,35 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppTccFrontend.Pages.CadastroMedicoPage"
              Title="Cadastro de Médico">
-    <ScrollView>
-        <StackLayout Margin="20">
-            <Label HorizontalOptions="CenterAndExpand" Margin="0,0,0,20"/>
+    <ScrollView Margin="20">
+        <StackLayout Spacing="10">
+            <Label Text="Nome" FontAttributes="Bold"/>
+            <Entry Placeholder="Digite o nome" x:Name="entNome"/>
 
-            <Entry Placeholder="Nome" x:Name="entNome" Margin="0,10,0,0"/>
+            <Label Text="Data de Nascimento" FontAttributes="Bold"/>
+            <DatePicker x:Name="entDtNascimento" Format="dd-MM-yyyy"/>
 
-            <DatePicker x:Name="entDtNascimento" Margin="0,10,0,0" />
+            <Label Text="Sexo" FontAttributes="Bold"/>
+            <Entry Placeholder="Digite o sexo" x:Name="entSexo"/>
 
-            <Entry Placeholder="Sexo" x:Name="entSexo" Margin="0,10,0,0"/>
+            <Label Text="Telefone" FontAttributes="Bold"/>
+            <Entry Placeholder="Digite o telefone" x:Name="entTelefone"/>
 
-            <Entry Placeholder="Telefone" x:Name="entTelefone" Margin="0,10,0,0"/>
+            <Label Text="Domicílio" FontAttributes="Bold"/>
+            <Entry Placeholder="Digite o domicílio" x:Name="entDomicilio"/>
 
-            <Entry Placeholder="Crm" x:Name="entCrm" Margin="0,10,0,0"/>
+            <Label Text="Crm" FontAttributes="Bold"/>
+            <Entry Placeholder="Digite o Crm" x:Name="entCrm"/>
 
+            <Label Text="Email" FontAttributes="Bold"/>
+            <Entry Placeholder="Digite o email" x:Name="entEmail"/>
 
-            <Entry Placeholder="Email" x:Name="entEmail" Margin="0,10,0,0"/>
+            <Label Text="Senha" FontAttributes="Bold"/>
+            <Entry Placeholder="Digite a senha" x:Name="entSenha" IsPassword="True"/>
 
-            <Entry Placeholder="Senha" x:Name="entSenha" IsPassword="True" Margin="0,10,0,0"/>
-
-          
-            <Button Text="Salvar Paciente"
+            <Button Text="Salvar Médico"
                     x:Name="SubmitBtn"
-                    BackgroundColor="#3498db"
+                    BackgroundColor="#173084"
                     TextColor="White"
                     FontAttributes="Bold"
                     CornerRadius="5"
                     Clicked="SubmitClicked"
                     Margin="0,20,0,0"
-                    HorizontalOptions="CenterAndExpand" />
+                    HorizontalOptions="Center"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

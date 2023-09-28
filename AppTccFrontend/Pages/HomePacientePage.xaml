@@ -13,9 +13,10 @@
             <Label x:Name="SexoLabel" FontSize="16" TextColor="White" />
 
             <Label x:Name="TelefoneLabel" FontSize="16" TextColor="White" />
+            <Label x:Name="DomicilioLabel" FontSize="16" TextColor="White" />
         </StackLayout>
 
-      
+
         <Button Text="Inserir nova medição" Clicked="OnInserirMedicaoClicked" HorizontalOptions="EndAndExpand" BackgroundColor="#233e95" TextColor="White" />
 
         <ListView x:Name="DiasListView" ItemsSource="{Binding _medicoesPorDia}">
@@ -37,13 +38,6 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Label x:Name="semMedicoes" Text="Sem medições disponíveis." FontSize="16" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False">
-            <Label.Triggers>
-                <DataTrigger TargetType="Label" Binding="{Binding _medicoesPorDia.Count}" Value="0">
-                    <Setter Property="IsVisible" Value="True" TargetName="semMedicoes" />
-                </DataTrigger>
-            </Label.Triggers>
-        </Label>
-
     </StackLayout>
+  
 </ContentPage>

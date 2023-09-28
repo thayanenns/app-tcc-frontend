@@ -880,6 +880,12 @@
     <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoapp.scale-100.jfif">
+      <PackagePath>logoapp.scale-100.jfif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\THAYANE\source\repos\AppTccFrontend\AppTccFrontend\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoapp.scale-100.png">
+      <PackagePath>logoapp.scale-100.png</PackagePath>
+    </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
     <ResolvedSDKReference Include="C:\Users\THAYANE\.nuget\packages\microsoft.windowsappsdk\1.2.221209.1\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.2.msix">
